@@ -1,0 +1,7 @@
+{% block body %}
+	{{ form(form) }}
+	{% if result is not empty %}
+	{{ result.amountToExchange }} {{ result.exchangeFromCurrency }} =  {{ result.exchangedAmount }} {{ result.exchangeToCurrency }}
+	{% endif  %}
+	
+{% endblock %}
